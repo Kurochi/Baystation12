@@ -100,7 +100,12 @@
 #define CULTURE_SKRELL_TALUM    "Talum-Katish"
 #define CULTURE_SKRELL_RASKINTA "Raskinta-Katish"
 
+// Tajaran cultures.
+#define CULTURE_TAJARA_MAAS "Maas"
+#define CULTURE_TAJARA_TAJR "Tajr"
+
 #define HOME_SYSTEM_QERRBALAK  "Qerrbalak"
+#define HOME_SYSTEM_TAJARA = "Tajara Home"
 
 // Adherent cultures.
 #define CULTURE_ADHERENT             "The Vigil"
@@ -189,9 +194,16 @@
 #define EDUCATION_NABBER_A      "Grade A"
 #define EDUCATION_NABBER_APLUS  "Grade A+"
 
-// Skrellian educmacation.
+// Skrellian education.
 #define EDUCATION_SKRELL_FAILURE      "Qlor-Mog"
 #define EDUCATION_SKRELL_BASIC        "Qrri-Mog"
 #define EDUCATION_SKRELL_FULL         "Qerr-Mog"
 #define EDUCATION_SKRELL_FULL_SCIENCE "Qerr-Mog, Science Focus"
 #define EDUCATION_SKRELL_FULL_DOCTOR  "Qerr-Mog, Medicine Focus"
+
+// Skrellian education.
+#define EDUCATION_TAJARA_FAILURE      "Tajara Skewl"
+#define EDUCATION_TAJARA_BASIC        "Tajara Skewl"
+#define EDUCATION_TAJARA_FULL         "Tajara Skewl"
+#define EDUCATION_TAJARA_FULL_SCIENCE "Tajara Skewl, Science Focus"
+#define EDUCATION_TAJARA_FULL_DOCTOR  "Tajara Skewl, Medicine Focus"
