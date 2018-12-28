@@ -99,13 +99,16 @@
 #define CULTURE_SKRELL_KANIN    "Kanin-Katish"
 #define CULTURE_SKRELL_TALUM    "Talum-Katish"
 #define CULTURE_SKRELL_RASKINTA "Raskinta-Katish"
+#define HOME_SYSTEM_QERRBALAK  "Qerrbalak"
 
 // Tajaran cultures.
 #define CULTURE_TAJARA_MAAS "Maas"
 #define CULTURE_TAJARA_TAJR "Tajr"
-
-#define HOME_SYSTEM_QERRBALAK  "Qerrbalak"
 #define HOME_SYSTEM_TAJARA "Tajara Home"
+
+// Resomi cultures
+#define CULTURE_RESOMI "Resomi"
+#define HOME_SYSTEM_RESOMI  "Resomi Home"
 
 // Adherent cultures.
 #define CULTURE_ADHERENT             "The Vigil"
@@ -207,3 +210,10 @@
 #define EDUCATION_TAJARA_FULL         "Tajara Skewl"
 #define EDUCATION_TAJARA_FULL_SCIENCE "Tajara Skewl, Science Focus"
 #define EDUCATION_TAJARA_FULL_DOCTOR  "Tajara Skewl, Medicine Focus"
+
+// Resomi education.
+#define EDUCATION_RESOMI_FAILURE      "Smol Birb Skewl"
+#define EDUCATION_RESOMI_BASIC        "Smol Birb Skewl"
+#define EDUCATION_RESOMI_FULL         "Smol Birb Skewl"
+#define EDUCATION_RESOMI_FULL_SCIENCE "Smol Birb Skewl, Science Focus"
+#define EDUCATION_RESOMI_FULL_DOCTOR  "Smol Birb Skewl, Medicine Focus"
