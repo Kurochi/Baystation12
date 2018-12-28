@@ -104,21 +104,20 @@
 	H.item_state = lowertext(name)
 
 /datum/species/monkey/tajaran
-	name = "Farwa"
-	name_plural = "Farwa"
+	name = "Tajaran"
+	name_plural = "Tajara"
 	health_hud_intensity = 2
 
 	icobase = 'icons/mob/human_races/species/monkey/farwa_body.dmi'
 	deform = 'icons/mob/human_races/species/monkey/farwa_body.dmi'
 
-	greater_form = "Tajaran"
-	default_language = "Farwa"
+	greater_form = SPECIES_TAJARA
 	flesh_color = "#afa59e"
 	base_color = "#333333"
-	tail = "farwatail"
+	tail = "tajtail"
 	force_cultural_info = list(
-		TAG_CULTURE =   CULTURE_FARWA,
-		TAG_HOMEWORLD = HOME_SYSTEM_STATELESS,
+		TAG_CULTURE =   CULTURE_TAJARA_MAAS,
+		TAG_HOMEWORLD = HOME_SYSTEM_TAJARA,
 		TAG_FACTION =   FACTION_TEST_SUBJECTS
 	)
 
@@ -138,7 +137,7 @@
 	force_cultural_info = list(
 		TAG_CULTURE =   CULTURE_NEARA,
 		TAG_HOMEWORLD = HOME_SYSTEM_STATELESS,
-		TAG_FACTION =   FACTION_TEST_SUBJECTS
+		TAG_FACTION =   FACTION_OTHER
 	)
 
 

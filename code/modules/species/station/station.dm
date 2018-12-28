@@ -113,7 +113,6 @@
 	assisted_langs = list(LANGUAGE_NABBER)
 	//secondary_langs =
 	health_hud_intensity = 1.75
-	economic_modifier = 7
 
 	/*
 	language = LANGUAGE_SIIK_MAAS
@@ -121,42 +120,10 @@
 	name_language = LANGUAGE_SIIK_MAAS
 	*/
 
-	available_cultural_info = list(
-		TAG_CULTURE = list(
-			CULTURE_TAJARA_MAAS,
-			CULTURE_TAJARA_TAJR
-		),
-		TAG_HOMEWORLD = list(
-			HOME_SYSTEM_TAJARA
-		),
-		TAG_FACTION = list(
-			FACTION_EXPEDITIONARY,
-			FACTION_CORPORATE,
-			FACTION_NANOTRASEN,
-			FACTION_PCRC,
-			FACTION_HEPHAESTUS,
-			FACTION_DAIS,
-			FACTION_OTHER
-		),
-		TAG_RELIGION = list(
-			RELIGION_OTHER,
-			RELIGION_ATHEISM,
-			RELIGION_DEISM,
-			RELIGION_AGNOSTICISM
-		),
-		TAG_EDUCATION = list(
-			EDUCATION_TAJARA_FAILURE,
-			EDUCATION_TAJARA_BASIC,
-			EDUCATION_TAJARA_FULL,
-			EDUCATION_TAJARA_FULL_SCIENCE,
-			EDUCATION_TAJARA_FULL_DOCTOR
-		)
-	)
-
 	min_age = 19
 	max_age = 140
 
-	blurb = "The Tajaran are a species of furred mammalian bipeds hailing from the chilly planet of Ahdomai \
+	description = "The Tajaran are a species of furred mammalian bipeds hailing from the chilly planet of Ahdomai \
 	in the Zamsiin-lr system. They are a naturally superstitious species, with the new generations growing up with tales \
 	of the heroic struggles of their forebears against the Overseers. This spirit has led them forward to the \
 	reconstruction and advancement of their society to what they are today. Their pride for the struggles they \
@@ -194,6 +161,37 @@
 
 	sexybits_location = BP_GROIN
 
+	available_cultural_info = list(
+		TAG_CULTURE = list(
+			CULTURE_TAJARA_MAAS,
+			CULTURE_TAJARA_TAJR
+		),
+		TAG_HOMEWORLD = list(
+			HOME_SYSTEM_TAJARA
+		),
+		TAG_FACTION = list(
+			FACTION_EXPEDITIONARY,
+			FACTION_CORPORATE,
+			FACTION_NANOTRASEN,
+			FACTION_PCRC,
+			FACTION_HEPHAESTUS,
+			FACTION_DAIS,
+			FACTION_OTHER
+		),
+		TAG_RELIGION = list(
+			RELIGION_OTHER,
+			RELIGION_ATHEISM,
+			RELIGION_DEISM,
+			RELIGION_AGNOSTICISM
+		),
+		TAG_EDUCATION = list(
+			EDUCATION_TAJARA_FAILURE,
+			EDUCATION_TAJARA_BASIC,
+			EDUCATION_TAJARA_FULL,
+			EDUCATION_TAJARA_FULL_SCIENCE,
+			EDUCATION_TAJARA_FULL_DOCTOR
+		)
+	)
 /datum/species/tajaran/equip_survival_gear(var/mob/living/carbon/human/H)
 	..()
 	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/sandal(H),slot_shoes)

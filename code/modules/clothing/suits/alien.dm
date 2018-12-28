@@ -32,7 +32,6 @@
 /obj/item/clothing/shoes/sandal/tajaran/caligae
 	name = "caligae"
 	desc = "The standard Tajaran footwear loosly resembles the Roman Caligae. Made of leather and rubber, their unique design allows for improved traction and protection. They don't look like they would fit on anyone but a Tajara."
-	description_fluff = "These traditional Tajaran footwear, also called Haskri, have remained reletivly unchanged in principal, with improved materials and construction being the only notable improvment. Originally used for harsher environment, they became widespread for their comfort and hygiene. Some of them come with covering for additional protection for more sterile environments. Made for the Tajarans digitigrade anatomy, they won't fit on any other species."
 	icon_state = "caligae"
 	item_state = "caligae"
 	body_parts_covered = FEET|LEGS
