@@ -15,11 +15,13 @@
 		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_helmet_unathi.dmi',
 		SPECIES_SKRELL = 'icons/mob/species/skrell/onmob_head_skrell.dmi',
 		SPECIES_TAJARA = 'icons/mob/species/tajaran/helmet.dmi',
+		SPECIES_RESOMI = 'icons/mob/species/resomi/helmet.dmi',
 		)
 	sprite_sheets_obj = list(
 		SPECIES_UNATHI = 'icons/obj/clothing/species/unathi/obj_head_unathi.dmi',
 		SPECIES_SKRELL = 'icons/obj/clothing/species/skrell/obj_head_skrell.dmi',
 		SPECIES_TAJARA = 'icons/obj/clothing/species/tajaran/hats.dmi',
+		SPECIES_RESOMI = 'icons/obj/clothing/species/resomi/hats.dmi',
 		)
 
 	light_overlay = "helmet_light"
@@ -41,11 +43,11 @@
 		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_suit_unathi.dmi',
 		SPECIES_SKRELL = 'icons/mob/species/skrell/onmob_suit_skrell.dmi',
 		SPECIES_TAJARA = 'icons/mob/species/tajaran/suit.dmi',
+		SPECIES_RESOMI = 'icons/mob/species/resomi/suit.dmi',
 		)
 	sprite_sheets_obj = list(
 		SPECIES_TAJARA = 'icons/obj/clothing/species/tajaran/suits.dmi',
-		SPECIES_UNATHI = 'icons/obj/clothing/species/unathi/obj_suit_unathi.dmi',
-		SPECIES_SKRELL = 'icons/obj/clothing/species/skrell/obj_suit_skrell.dmi',
+		SPECIES_RESOMI = 'icons/obj/clothing/species/resomi/suits.dmi',
 		)
 
 	//Breach thresholds, should ideally be inherited by most (if not all) voidsuits.

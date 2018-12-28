@@ -171,6 +171,7 @@
 	w_class = ITEM_SIZE_TINY
 	throwforce = 2
 	slot_flags = SLOT_EARS
+	sprite_sheets = list(SPECIES_RESOMI = 'icons/mob/species/resomi/ears.dmi')
 
 /obj/item/clothing/ears/update_clothing_icon()
 	if (ismob(src.loc))
@@ -236,6 +237,7 @@ BLIND     // can't see anything
 	sprite_sheets = list(
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_suit_vox.dmi',
 		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_eyes_unathi.dmi',
+		SPECIES_RESOMI = 'icons/mob/species/resomi/eyes.dmi',
 		)
 
 /obj/item/clothing/glasses/get_icon_state(mob/user_mob, slot)
@@ -271,6 +273,7 @@ BLIND     // can't see anything
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_hands_vox.dmi',
 		SPECIES_NABBER = 'icons/mob/species/nabber/onmob_hands_gas.dmi',
 		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_hands_unathi.dmi',
+		SPECIES_RESOMI = 'icons/mob/species/resomi/gloves.dmi',
 		)
 	blood_overlay_type = "bloodyhands"
 
@@ -384,6 +387,7 @@ BLIND     // can't see anything
 	sprite_sheets = list(
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_head_vox.dmi',
 		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_head_unathi.dmi',
+		SPECIES_RESOMI = 'icons/mob/species/resomi/head.dmi'
 		)
 	blood_overlay_type = "helmetblood"
 
@@ -495,6 +499,7 @@ BLIND     // can't see anything
 	sprite_sheets = list(
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_mask_vox.dmi',
 		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_mask_unathi.dmi',
+		SPECIES_RESOMI = 'icons/mob/species/resomi/masks.dmi',
 		)
 
 	var/voicechange = 0
@@ -581,6 +586,7 @@ BLIND     // can't see anything
 	sprite_sheets = list(
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_feet_vox.dmi',
 		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_feet_unathi.dmi',
+		SPECIES_RESOMI = 'icons/mob/species/resomi/shoes.dmi',
 		)
 	blood_overlay_type = "shoeblood"
 
@@ -661,6 +667,7 @@ BLIND     // can't see anything
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_suit_vox.dmi',
 		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_suit_unathi.dmi',
 		SPECIES_NABBER = 'icons/mob/species/nabber/onmob_suit_gas.dmi',
+		SPECIES_RESOMI = 'icons/mob/species/resomi/suit.dmi'
 		)
 
 /obj/item/clothing/suit/update_clothing_icon()
@@ -711,6 +718,7 @@ BLIND     // can't see anything
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_under_vox.dmi',
 		SPECIES_NABBER = 'icons/mob/species/nabber/onmob_under_gas.dmi',
 		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_under_unathi.dmi',
+		SPECIES_RESOMI = 'icons/mob/species/resomi/uniform.dmi'
 		)
 
 	//convenience var for defining the icon state for the overlay used when the clothing is worn.
