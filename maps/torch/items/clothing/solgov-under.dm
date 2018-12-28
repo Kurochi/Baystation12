@@ -46,6 +46,7 @@
 	worn_state = "blackutility"
 	sprite_sheets = list(
 		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_under_unathi.dmi'
+		SPECIES_TAJARA = 'icons/mob/species/tajaran/uniform.dmi',
 		)
 
 /obj/item/clothing/under/solgov/utility/expeditionary
@@ -55,6 +56,7 @@
 	worn_state = "blackutility_crew"
 	sprite_sheets = list(
 		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_under_unathi.dmi'
+		SPECIES_TAJARA = 'icons/mob/species/tajaran/uniform.dmi',
 		)
 
 /obj/item/clothing/under/solgov/utility/expeditionary_skirt
@@ -64,6 +66,7 @@
 	worn_state = "blackservicef"
 	sprite_sheets = list(
 		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_under_unathi.dmi'
+		SPECIES_TAJARA = 'icons/mob/species/tajaran/uniform.dmi',
 		)
 
 /obj/item/clothing/under/solgov/utility/expeditionary_skirt/officer
