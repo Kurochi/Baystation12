@@ -23,6 +23,9 @@
 #define LANGUAGE_XENOPHAGE_HIVE "Hivemind"
 #define LANGUAGE_YEOSA          "Yeosa'unathi"
 
+#define LANGUAGE_RESOMI "Schechi"
+#define LANGUAGE_TRADEBAND "Tradeband"
+
 // Language flags.
 #define WHITELISTED  1   // Language is available if the speaker is whitelisted.
 #define RESTRICTED   2   // Language can only be acquired by spawning or an admin.

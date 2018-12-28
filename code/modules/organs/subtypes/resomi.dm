@@ -7,7 +7,7 @@
 /obj/item/organ/external/hand/right/resomi
 	body_hair = "feathers"
 /obj/item/organ/external/head/resomi
-	eye_icon = "eyes_resomi"
+	eye_icon_location = "icons/mob/human_races/species/resomi_eyes.dmi"
 /obj/item/organ/internal/kidneys/resomi
 	parent_organ = BP_CHEST
 /obj/item/organ/internal/liver/resomi

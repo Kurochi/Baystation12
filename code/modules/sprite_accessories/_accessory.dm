@@ -1,3 +1,9 @@
+
+
+
+
+
+
 /*
 
 	Hello and welcome to sprite_accessories: For sprite accessories, such as hair,
