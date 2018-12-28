@@ -45,7 +45,7 @@
 	item_state = "bl_suit"
 	worn_state = "blackutility"
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_under_unathi.dmi'
+		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_under_unathi.dmi',
 		SPECIES_TAJARA = 'icons/mob/species/tajaran/uniform.dmi',
 		)
 
@@ -55,7 +55,7 @@
 	icon_state = "blackutility_crew"
 	worn_state = "blackutility_crew"
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_under_unathi.dmi'
+		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_under_unathi.dmi',
 		SPECIES_TAJARA = 'icons/mob/species/tajaran/uniform.dmi',
 		)
 
@@ -65,7 +65,7 @@
 	icon_state = "blackservicef"
 	worn_state = "blackservicef"
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_under_unathi.dmi'
+		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_under_unathi.dmi',
 		SPECIES_TAJARA = 'icons/mob/species/tajaran/uniform.dmi',
 		)
 

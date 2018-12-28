@@ -110,14 +110,48 @@
 	burn_mod =  1.15
 	flash_mod = 1.4
 	gluttonous = GLUT_TINY
-	num_alternate_languages = 1
-	language = LANGUAGE_SIIK_MAAS
-	additional_langs = list(LANGUAGE_SIIK_TAJR)
 	assisted_langs = list(LANGUAGE_NABBER)
 	//secondary_langs =
-	name_language = LANGUAGE_SIIK_MAAS
 	health_hud_intensity = 1.75
 	economic_modifier = 7
+
+	/*
+	language = LANGUAGE_SIIK_MAAS
+	additional_langs = list(LANGUAGE_SIIK_TAJR)
+	name_language = LANGUAGE_SIIK_MAAS
+	*/
+
+	available_cultural_info = list(
+		TAG_CULTURE = list(
+			CULTURE_TAJARA_MAAS,
+			CULTURE_TAJARA_TAJR
+		),
+		TAG_HOMEWORLD = list(
+			HOME_SYSTEM_TAJARA
+		),
+		TAG_FACTION = list(
+			FACTION_EXPEDITIONARY,
+			FACTION_CORPORATE,
+			FACTION_NANOTRASEN,
+			FACTION_PCRC,
+			FACTION_HEPHAESTUS,
+			FACTION_DAIS,
+			FACTION_OTHER
+		),
+		TAG_RELIGION = list(
+			RELIGION_OTHER,
+			RELIGION_ATHEISM,
+			RELIGION_DEISM,
+			RELIGION_AGNOSTICISM
+		),
+		TAG_EDUCATION = list(
+			EDUCATION_TAJARA_FAILURE,
+			EDUCATION_TAJARA_BASIC,
+			EDUCATION_TAJARA_FULL,
+			EDUCATION_TAJARA_FULL_SCIENCE,
+			EDUCATION_TAJARA_FULL_DOCTOR
+		)
+	)
 
 	min_age = 19
 	max_age = 140

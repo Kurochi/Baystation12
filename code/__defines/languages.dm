@@ -18,6 +18,10 @@
 #define LANGUAGE_ALIUM "Alium"
 #define LANGUAGE_OCCULT "Occult"
 #define LANGUAGE_ADHERENT "Protocol"
+#define LANGUAGE_VOX            "Vox-pidgin"
+#define LANGUAGE_XENOPHAGE      "Xenophage"
+#define LANGUAGE_XENOPHAGE_HIVE "Hivemind"
+#define LANGUAGE_YEOSA          "Yeosa'unathi"
 
 // Language flags.
 #define WHITELISTED  1   // Language is available if the speaker is whitelisted.
