@@ -104,7 +104,7 @@
 #define CULTURE_TAJARA_TAJR "Tajr"
 
 #define HOME_SYSTEM_QERRBALAK  "Qerrbalak"
-#define HOME_SYSTEM_TAJARA = "Tajara Home"
+#define HOME_SYSTEM_TAJARA "Tajara Home"
 
 // Adherent cultures.
 #define CULTURE_ADHERENT             "The Vigil"
