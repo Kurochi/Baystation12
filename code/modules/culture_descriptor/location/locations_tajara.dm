@@ -8,6 +8,5 @@
 	ruling_body = "Cat Technocracy"
 
 /decl/cultural_info/location/tajara/tajr
-	name = HOME_SYSTEM_ADHERENT_MOURNER
 	language = LANGUAGE_SIIK_TAJR
 	description = "Big cat home 2"
