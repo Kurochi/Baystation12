@@ -40,7 +40,7 @@ Civilian
 		/datum/mil_rank/civ/civ,
 		/datum/mil_rank/civ/contractor
 	)
-	required_education = EDUCATION_TIER_NONE
+	//required_education = EDUCATION_TIER_NONE
 
 /datum/job/merchant
 	title = "Merchant"

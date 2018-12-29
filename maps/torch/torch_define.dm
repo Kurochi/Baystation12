@@ -2,7 +2,6 @@
 	name = "Torch"
 	full_name = "SEV Torch"
 	path = "torch"
-	flags = MAP_HAS_BRANCH | MAP_HAS_RANK
 
 	admin_levels = list(7,8)
 	empty_levels = list(9)
