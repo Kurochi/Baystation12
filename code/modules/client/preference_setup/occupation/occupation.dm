@@ -143,13 +143,13 @@
 		else if(!S.check_background(job, user.client.prefs))
 			bad_message = "<b> \[BACKGROUND RESTRICTED]</b>"
 
-		if(!bad_message && job.allowed_branches)
+		if(!bad_message && job.allowed_branches && (GLOB.using_map.flags & MAP_HAS_BRANCH))
 			if(!player_branch)
 				bad_message = "<a href='?src=\ref[src];show_branches=[rank]'><b> \[BRANCH RESTRICTED]</b></a>"
 			else if(!is_type_in_list(player_branch, job.allowed_branches))
 				bad_message = "<a href='?src=\ref[src];show_branches=[rank]'><b> \[NOT FOR [player_branch.name_short]]</b></a>"
 
-		if(!bad_message && job.allowed_ranks)
+		if(!bad_message && job.allowed_ranks && (GLOB.using_map.flags & MAP_HAS_RANK))
 			if(!player_rank)
 				bad_message = "<a href='?src=\ref[src];show_ranks=[rank]'><b> \[RANK RESTRICTED]</b></a>"
 			else if(!is_type_in_list(player_rank, job.allowed_ranks))
