@@ -3,6 +3,9 @@
 	display_name = "duty boots"
 	path = /obj/item/clothing/shoes/dutyboots
 
+/datum/gear/shoes/dress
+	allowed_roles = MILITARY_ROLES
+
 /datum/gear/shoes/whitedress
 	display_name = "dress shoes, white"
 	path = /obj/item/clothing/shoes/dress/white
