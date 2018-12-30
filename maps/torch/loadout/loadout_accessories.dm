@@ -257,3 +257,15 @@
 	pouches["green large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large/green
 	pouches["tan large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large/tan
 	gear_tweaks += new/datum/gear_tweak/path(pouches)
+
+/datum/gear/accessory/tags
+	display_name = "dog tags"
+	path = /obj/item/clothing/accessory/badge/tags
+	allowed_roles = MILITARY_ROLES
+
+/datum/gear/accessory/kneepads
+	display_name = "kneepads"
+	path = /obj/item/clothing/accessory/kneepads
+
+/datum/gear/accessory/flannel
+	allowed_roles = SEMIFORMAL_ROLES
