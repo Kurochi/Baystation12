@@ -1,5 +1,6 @@
 #if !defined(using_map_DATUM)
 
+	#include "exodus_define.dm"
 	#include "exodus_areas.dm"
 	#include "exodus_effects.dm"
 	#include "exodus_elevator.dm"
@@ -28,12 +29,12 @@
 	#include "exodus-6.dmm"
 	#include "exodus-7.dmm"
 
-	#include "../../code/modules/lobby_music/absconditus.dm"
-	#include "../../code/modules/lobby_music/clouds_of_fire.dm"
-	#include "../../code/modules/lobby_music/endless_space.dm"
-	#include "../../code/modules/lobby_music/dilbert.dm"
-	#include "../../code/modules/lobby_music/space_oddity.dm"
-	#include "../../code/modules/lobby_music/title1.dm"
+	#include "../../code/datums/music_tracks/absconditus.dm"
+	#include "../../code/datums/music_tracks/clouds_of_fire.dm"
+	#include "../../code/datums/music_tracks/endless_space.dm"
+	#include "../../code/datums/music_tracks/dilbert.dm"
+	#include "../../code/datums/music_tracks/space_oddity.dm"
+	#include "../../code/datums/music_tracks/title1.dm"
 
 	#define using_map_DATUM /datum/map/exodus
 
