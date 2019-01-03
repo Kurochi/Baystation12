@@ -65,6 +65,7 @@
 /obj/effect/shuttle_landmark/proc/sector_set(var/obj/effect/overmap/O)
 
 /obj/effect/shuttle_landmark/proc/is_valid(var/datum/shuttle/shuttle) // This should override the previous one
+	world.log << src.type
 	world.log << "[base_area.name]"
 	if(shuttle.current_location == src)
 		world.log << "Location: [base_area.name] equals attempted destination"
