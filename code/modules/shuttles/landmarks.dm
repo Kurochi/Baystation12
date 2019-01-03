@@ -7,6 +7,7 @@
 	unacidable = 1
 	simulated = 0
 	invisibility = 101
+	density = 0
 
 	var/landmark_tag
 	//ID of the controller on the dock side
@@ -69,20 +70,42 @@
 		return FALSE
 	for(var/area/A in shuttle.shuttle_area)
 		var/list/translation = get_turf_translation(get_turf(shuttle.current_location), get_turf(src), A.contents)
-		if(check_collision(base_area, list_values(translation)))
+		world.log << "Area name [base_area.name] [base_area.type]"
+		if(check_collision(base_area, base_area.contents)
 			return FALSE
 	return TRUE
+
+/*/obj/effect/shuttle_landmark/proc/is_valid(var/datum/shuttle/shuttle) // This should override the previous one
+	world.log << "[base_area.name]"
+	if(shuttle.current_location == src)
+		world.log << "Location: [base_area.name] equals attempted destination"
+		return FALSE
+	if(check_collision(base_area, base_area.contents))
+		world.log << "[base_area.name] tested positive for collision"
+		return FALSE
+	return TRUE*/
 
 /proc/check_collision(area/target_area, list/target_turfs)
 	for(var/target_turf in target_turfs)
 		var/turf/target = target_turf
 		if(!target)
+			world.log << "Edge of map collision"
 			return TRUE //collides with edge of map
 		if(target.loc != target_area)
+			world.log << "Different area: [target.loc] != [target_area]"
 			return TRUE //collides with another area
 		if(target.density)
+			world.log << "Dense turf! [target.name] [target.x] [target.y] [target.z]"
 			return TRUE //dense turf
 	return FALSE
+
+/*/proc/check_collision(area/target_area, list/target_turfs)
+	for(var/target_turf in target_turfs)
+		var/turf/target = target_turf
+		if(target.density)
+			world.log << "Dense turf! [target.name] [target.x] [target.y] [target.z]"
+			return TRUE //dense turf
+	return FALSE*/
 
 //Self-naming/numbering ones.
 /obj/effect/shuttle_landmark/automatic
