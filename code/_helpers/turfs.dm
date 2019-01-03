@@ -113,8 +113,6 @@
 //Returns an assoc list that describes how turfs would be changed if the
 //turfs in turfs_src were translated by shifting the src_origin to the dst_origin
 /proc/get_turf_translation(turf/src_origin, turf/dst_origin, list/turfs_src)
-	world.log << "X: [src_origin.x]; Y: [src_origin.y]; Z: [src_origin.z]"
-	world.log << "X: [dst_origin.x]; Y: [dst_origin.y]; Z: [dst_origin.z]"
 	var/list/turf_map = list()
 	for(var/turf/source in turfs_src)
 		var/x_pos = (source.x - src_origin.x)
