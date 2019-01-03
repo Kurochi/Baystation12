@@ -213,7 +213,9 @@
 /datum/shuttle/autodock/ferry/research
 	name = "Research"
 	warmup_time = 10
+	location = 0
 	waypoint_station = "research_shuttle_station"
 	waypoint_offsite = "research_shuttle_offsite"
 	shuttle_area = /area/shuttle/research/station
 	current_location = "research_shuttle_station"
+	dock_target = "research_shuttle"
