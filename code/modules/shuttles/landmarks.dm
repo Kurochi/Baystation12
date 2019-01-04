@@ -65,16 +65,11 @@
 /obj/effect/shuttle_landmark/proc/sector_set(var/obj/effect/overmap/O)
 
 /obj/effect/shuttle_landmark/proc/is_valid(var/datum/shuttle/shuttle)
-	world.log << src.type
-	world.log << "[base_area.name]"
 	if(shuttle.current_location == src)
-		world.log << "Location: [base_area.name] equals attempted destination"
 		return FALSE
 	for(var/area/A in shuttle.shuttle_area)
 		var/list/translation = get_turf_translation(get_turf(shuttle.current_location), get_turf(src), A.contents)
-		world.log << "Area name [base_area.name] [base_area.type]"
 		if(check_collision(base_area, list_values(translation)))
-			world.log << "[base_area.name] tested positive for collision"
 			return FALSE
 	return TRUE
 
@@ -82,15 +77,12 @@
 	for(var/target_turf in target_turfs)
 		var/turf/target = target_turf
 		if(!target)
-			world.log << "tile out of bounds"
 			return TRUE //collides with edge of map
 		if(target.loc != target_area)
-			world.log << "[target.loc.type] != [target_area.type]"
 			return TRUE //collides with another area
 		if(target.density)
-			world.log << "dense turf: [target.type]"
 			return TRUE //dense turf
-return FALSE
+	return FALSE
 
 //Self-naming/numbering ones.
 /obj/effect/shuttle_landmark/automatic
