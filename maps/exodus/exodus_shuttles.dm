@@ -219,3 +219,23 @@
 	shuttle_area = /area/shuttle/research/station
 	current_location = "research_shuttle_station"
 	dock_target = "research_shuttle"
+
+/datum/shuttle/autodock/ferry/mining
+	name = "Mining"
+	warmup_time = 10
+	location = 0
+	waypoint_station = "mining_shuttle_station"
+	waypoint_offsite = "mining_shuttle_offsite"
+	shuttle_area = /area/shuttle/mining/station
+	current_location = "mining_shuttle_station"
+	dock_target = "mining_shuttle"
+
+/datum/shuttle/autodock/ferry/engineering
+	name = "Engineering"
+	warmup_time = 10
+	location = 0
+	waypoint_station = "engineering_shuttle_station"
+	waypoint_offsite = "engineering_shuttle_offsite"
+	shuttle_area = /area/shuttle/constructionsite/station
+	current_location = "engineering_shuttle_station"
+	dock_target = "engineering_shuttle"
