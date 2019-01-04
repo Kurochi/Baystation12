@@ -27,3 +27,17 @@
 	name = "Outpost Dock - Engineering"
 	landmark_tag = "engineering_shuttle_offsite"
 	docking_controller = "edock_airlock"
+
+/obj/effect/shuttle_landmark/escape/station
+	name = "Station Dock - Escape"
+	landmark_tag = "escape_shuttle_station"
+	docking_controller = "escape_dock"
+
+/obj/effect/shuttle_landmark/escape/transit
+	name = "In transit"
+	landmark_tag = "escape_shuttle_transit"
+
+/obj/effect/shuttle_landmark/escape/centcom
+	name = "Centcomm Dock - Arrivals"
+	landmark_tag = "escape_shuttle_centcom"
+	docking_controller = "centcom_dock"
