@@ -17,6 +17,15 @@
 		/obj/item/weapon/stock_parts/micro_laser = 2
 		)
 
+/obj/item/weapon/circuitboard/coin_puncher
+	name = T_BOARD("coin press")
+	build_path = /obj/machinery/mineral/coin_puncher
+	board_type = "machine"
+	origin_tech = list(TECH_MATERIALS = 2)
+	req_components = list(
+		/obj/item/weapon/stock_parts/manipulator = 1
+	)
+
 /obj/item/weapon/circuitboard/mining_unloader
 	name = T_BOARD("unloading machine")
 	build_path = /obj/machinery/mineral/unloading_machine

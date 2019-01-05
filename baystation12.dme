@@ -1781,6 +1781,7 @@
 #include "code\modules\mining\drilling\drill.dm"
 #include "code\modules\mining\drilling\scanner.dm"
 #include "code\modules\mining\machinery\_mineral.dm"
+#include "code\modules\mining\machinery\coin_press.dm"
 #include "code\modules\mining\machinery\mineral_console.dm"
 #include "code\modules\mining\machinery\mineral_processor.dm"
 #include "code\modules\mining\machinery\mineral_stacker.dm"
