@@ -249,3 +249,38 @@
 	waypoint_offsite = "escape_shuttle_centcom"
 	landmark_transition = "escape_shuttle_transit"
 	dock_target = "escape_shuttle"
+
+/datum/shuttle/autodock/ferry/escape_pod/
+	category = /datum/shuttle/autodock/ferry/escape_pod/
+	sound_takeoff = 'sound/effects/rocket.ogg'
+	sound_landing = 'sound/effects/rocket_backwards.ogg'
+	var/number
+
+/datum/shuttle/autodock/ferry/escape_pod/New()
+	name = "Escape Pod [number]"
+	dock_target = "escape_pod_[number]"
+	arming_controller = "escape_pod_[number]_berth"
+	waypoint_station = "escape_pod_[number]_start"
+	landmark_transition = "escape_pod_[number]_internim"
+	waypoint_offsite = "escape_pod_[number]_out"
+	..()
+
+/datum/shuttle/autodock/ferry/escape_pod/escape_pod1
+	warmup_time = 0
+	number = 1
+	shuttle_area = /area/shuttle/escape_pod1/station
+
+/datum/shuttle/autodock/ferry/escape_pod/escape_pod2
+	warmup_time = 0
+	number = 2
+	shuttle_area = /area/shuttle/escape_pod2/station
+
+/datum/shuttle/autodock/ferry/escape_pod/escape_pod3
+	warmup_time = 0
+	number = 3
+	shuttle_area = /area/shuttle/escape_pod3/station
+
+/datum/shuttle/autodock/ferry/escape_pod/escape_pod5
+	warmup_time = 0
+	number = 5
+	shuttle_area = /area/shuttle/escape_pod5/station

@@ -3,6 +3,7 @@ var/list/escape_pods_by_name = list()
 
 /datum/shuttle/autodock/ferry/escape_pod
 	var/datum/computer/file/embedded_program/docking/simple/escape_pod/arming_controller
+	var/long_jump_time = 0
 	category = /datum/shuttle/autodock/ferry/escape_pod
 	move_time = 100
 
@@ -45,6 +46,8 @@ var/list/escape_pods_by_name = list()
 /datum/shuttle/autodock/ferry/escape_pod/can_cancel()
 	return 0
 
+/datum/shuttle/autodock/ferry/escape_pod/long_jump(var/destination, var/interim)
+	..(destination, interim, long_jump_time, !location)
 
 //This controller goes on the escape pod itself
 /obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod
