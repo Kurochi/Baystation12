@@ -284,3 +284,12 @@
 	warmup_time = 0
 	number = 5
 	shuttle_area = /area/shuttle/escape_pod5/station
+
+/datum/shuttle/autodock/ferry/supply/cargo
+	name = "Supply"
+	location = 1
+	warmup_time = 10
+	shuttle_area = /area/supply/dock
+	waypoint_station = "nav_supply_out"
+	waypoint_offsite = "nav_supply_start"
+	dock_target = "supply_shuttle"

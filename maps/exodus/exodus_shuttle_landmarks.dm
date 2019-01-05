@@ -95,3 +95,12 @@
 	number = 5
 /obj/effect/shuttle_landmark/escape_pod/transit/pod5
 	number = 5
+
+/obj/effect/shuttle_landmark/supply/start
+	name = "Centcomm Dock - Supply"
+	landmark_tag = "nav_supply_start"
+
+/obj/effect/shuttle_landmark/supply/out
+	name = "Station Dock - Supply"
+	landmark_tag = "nav_supply_out"
+	docking_controller = "cargo_bay"
