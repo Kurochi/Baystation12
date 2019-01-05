@@ -242,11 +242,10 @@
 
 /datum/shuttle/autodock/ferry/emergency/centcom
 	name = "Escape"
-	location = 0
+	location = 1
 	warmup_time = 10
 	shuttle_area = /area/shuttle/escape/centcom
-	waypoint_station = "escape_shuttle_centcom"
-	waypoint_offsite = "escape_shuttle_station"
+	waypoint_station = "escape_shuttle_station"
+	waypoint_offsite = "escape_shuttle_centcom"
 	landmark_transition = "escape_shuttle_transit"
-	current_location = "escape_shuttle_centcom"
 	dock_target = "escape_shuttle"
