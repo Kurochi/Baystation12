@@ -443,28 +443,28 @@
 	landmark_tag = "nav_skipjack_transition"
 
 /obj/effect/shuttle_landmark/skipjack/dock
-	name = "Fore starboard solars"
+	name = "Arrivals Dock"
 	landmark_tag = "nav_skipjack_dock"
 	docking_controller = "skipjack_shuttle_dock_airlock"
 
-/obj/effect/shuttle_landmark/skipjack/deck1
-	name = "Fore port solars"
+/obj/effect/shuttle_landmark/skipjack/skipjack_fore_starboard_solars
+	name = "Fore starboard solars"
 	landmark_tag = "skipjack_fore_starboard_solars"
 
-/obj/effect/shuttle_landmark/skipjack/deck2
-	name = "Aft starboard solars"
+/obj/effect/shuttle_landmark/skipjack/skipjack_fore_port_solars
+	name = "Fore port solars"
 	landmark_tag = "skipjack_fore_port_solars"
 
-/obj/effect/shuttle_landmark/skipjack/deck3
-	name = "Aft port solars"
+/obj/effect/shuttle_landmark/skipjack/skipjack_aft_starboard_solars
+	name = "Aft starboard solars"
 	landmark_tag = "skipjack_aft_starboard_solars"
 
-/obj/effect/shuttle_landmark/skipjack/deck4
-	name = "Mining station"
+/obj/effect/shuttle_landmark/skipjack/skipjack_aft_port_solars
+	name = "Aft port solars"
 	landmark_tag = "skipjack_aft_port_solars"
 
-/obj/effect/shuttle_landmark/skipjack/deck5
-	name = "South of Bridge"
+/obj/effect/shuttle_landmark/skipjack/skipjack_mining_station
+	name = "Mining station"
 	landmark_tag = "skipjack_mining_station"
 
 //NT Rescue Shuttle
@@ -523,28 +523,28 @@
 	landmark_tag = "rescue_southwest_of_the_station"
 
 /obj/effect/shuttle_landmark/ert/rescue_south_of_the_station
-	name = "West of Bridge"
+	name = "South of the Station"
 	landmark_tag = "rescue_south_of_the_station"
 
 /obj/effect/shuttle_landmark/ert/rescue_southeast_of_the_station
-	name = "West of Bridge"
+	name = "Sout East of the Station"
 	landmark_tag = "rescue_southeast_of_the_station"
 
 /obj/effect/shuttle_landmark/ert/rescue_telecomms_satellite
-	name = "West of Bridge"
+	name = "Telecomms"
 	landmark_tag = "rescue_telecomms_satellite"
 
 /obj/effect/shuttle_landmark/ert/rescue_engineering_station
-	name = "West of Bridge"
+	name = "Engineering Station"
 	landmark_tag = "rescue_engineering_station"
 
 /obj/effect/shuttle_landmark/ert/rescue_arrivals_dock
-	name = "West of Bridge"
+	name = "Arrivals"
 	landmark_tag = "rescue_arrivals_dock"
 
 //Deathsquad Assault Pod
 
-/datum/shuttle/autodock/ferry/specops/ert
+/datum/shuttle/autodock/ferry/specops
 	name = "Special Operations"
 	warmup_time = 10
 	shuttle_area = /area/shuttle/specops/centcom
