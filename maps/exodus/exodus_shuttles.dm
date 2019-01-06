@@ -293,3 +293,298 @@
 	waypoint_station = "nav_supply_out"
 	waypoint_offsite = "nav_supply_start"
 	dock_target = "supply_shuttle"
+
+
+// transport shuttle
+
+/datum/shuttle/autodock/ferry/centcom
+	name = "Centcom"
+	location = 1
+	warmup_time = 10
+	shuttle_area = /area/shuttle/transport1/centcom
+	waypoint_station = "centcom_shuttle_start"
+	waypoint_offsite = "centcom_shuttle_out"
+	dock_target = "centcom_shuttle"
+
+/obj/effect/shuttle_landmark/centcom/start
+	name = "Centcom"
+	landmark_tag = "centcom_shuttle_start"
+	docking_controller = "centcom_shuttle_bay"
+	base_area = /area/centcom
+	base_turf = /turf/simulated/floor/plating
+
+/obj/effect/shuttle_landmark/centcom/out
+	name = "Docking Bay"
+	landmark_tag = "centcom_shuttle_out"
+	docking_controller = "centcom_shuttle_dock_airlock"
+
+// admin shuttle
+
+/datum/shuttle/autodock/ferry/administration
+	name = "Administration"
+	warmup_time = 10	//want some warmup time so people can cancel.
+	shuttle_area = /area/shuttle/administration/centcom
+	dock_target = "admin_shuttle"
+	waypoint_station = "nav_admin_start"
+	waypoint_offsite = "nav_admin_out"
+
+/obj/effect/shuttle_landmark/admin/start
+	name = "Centcom"
+	landmark_tag = "nav_admin_start"
+	docking_controller = "admin_shuttle_bay_door"
+	base_area = /area/centcom
+	base_turf = /turf/simulated/floor/plating
+
+/obj/effect/shuttle_landmark/admin/out
+	name = "Docking Bay"
+	landmark_tag = "nav_admin_out"
+	docking_controller = "admin_shuttle_dock_airlock"
+
+// merc shuttle
+
+/datum/shuttle/autodock/multi/antag/mercenary
+	name = "Mercenary"
+	warmup_time = 0
+	destination_tags = list(
+		"nav_merc_start",
+		"merc_station_nw",
+		"merc_station_n",
+		"merc_station_ne",
+		"merc_station_sw",
+		"merc_station_s",
+		"merc_station_se",
+		"merc_station_telecomms",
+		"merc_station_mining",
+		"merc_station_arrivals"
+		)
+	shuttle_area = /area/syndicate_station/start
+	dock_target = "merc_shuttle"
+	current_location = "nav_merc_start"
+	landmark_transition = "nav_merc_transition"
+	announcer = "SEV Torch Sensor Array"
+	home_waypoint = "nav_merc_start"
+	arrival_message = "Attention, vessel detected entering vessel proximity."
+	departure_message = "Attention, vessel detected leaving vessel proximity."
+
+/obj/effect/shuttle_landmark/merc/start
+	name = "Mercenary Base"
+	landmark_tag = "nav_merc_start"
+	docking_controller = "merc_base"
+
+/obj/effect/shuttle_landmark/merc/internim
+	name = "In transit"
+	landmark_tag = "nav_merc_transition"
+
+/obj/effect/shuttle_landmark/merc/nw
+	name = "Northwest of station"
+	landmark_tag = "merc_station_nw"
+	docking_controller = "nuke_shuttle_dock_airlock"
+
+/obj/effect/shuttle_landmark/merc/n
+	name = "North of station"
+	landmark_tag = "merc_station_n"
+
+/obj/effect/shuttle_landmark/merc/ne
+	name = "Northeast of station"
+	landmark_tag = "merc_station_ne"
+
+/obj/effect/shuttle_landmark/merc/sw
+	name = "Southwest of station"
+	landmark_tag = "merc_station_sw"
+
+/obj/effect/shuttle_landmark/merc/s
+	name = "South of station"
+	landmark_tag = "merc_station_s"
+
+/obj/effect/shuttle_landmark/merc/se
+	name = "Southeast of station"
+	landmark_tag = "merc_station_se"
+
+/obj/effect/shuttle_landmark/merc/telecomms
+	name = "Telecomms"
+	landmark_tag = "merc_station_telecomms"
+
+/obj/effect/shuttle_landmark/merc/mining
+	name = "Mining station"
+	landmark_tag = "merc_station_mining"
+
+/obj/effect/shuttle_landmark/merc/arrivals
+	name = "Arrivals"
+	landmark_tag = "merc_station_arrivals"
+
+//Skipjack
+
+/datum/shuttle/autodock/multi/antag/skipjack
+	name = "Skipjack"
+	warmup_time = 0
+	destination_tags = list(
+		"skipjack_fore_starboard_solars",
+		"skipjack_fore_port_solars",
+		"skipjack_aft_starboard_solars",
+		"skipjack_aft_port_solars",
+		"skipjack_mining_station"
+		)
+	shuttle_area =  /area/skipjack_station/start
+	dock_target = "skipjack_shuttle"
+	current_location = "nav_skipjack_start"
+	landmark_transition = "nav_skipjack_transition"
+	announcer = "SEV Torch Sensor Array"
+	home_waypoint = "nav_skipjack_start"
+	arrival_message = "Attention, vessel detected entering vessel proximity."
+	departure_message = "Attention, vessel detected leaving vessel proximity."
+
+/obj/effect/shuttle_landmark/skipjack/start
+	name = "Raider Outpost"
+	landmark_tag = "nav_skipjack_start"
+	docking_controller = "skipjack_base"
+
+/obj/effect/shuttle_landmark/skipjack/internim
+	name = "In transit"
+	landmark_tag = "nav_skipjack_transition"
+
+/obj/effect/shuttle_landmark/skipjack/dock
+	name = "Fore starboard solars"
+	landmark_tag = "nav_skipjack_dock"
+	docking_controller = "skipjack_shuttle_dock_airlock"
+
+/obj/effect/shuttle_landmark/skipjack/deck1
+	name = "Fore port solars"
+	landmark_tag = "skipjack_fore_starboard_solars"
+
+/obj/effect/shuttle_landmark/skipjack/deck2
+	name = "Aft starboard solars"
+	landmark_tag = "skipjack_fore_port_solars"
+
+/obj/effect/shuttle_landmark/skipjack/deck3
+	name = "Aft port solars"
+	landmark_tag = "skipjack_aft_starboard_solars"
+
+/obj/effect/shuttle_landmark/skipjack/deck4
+	name = "Mining station"
+	landmark_tag = "skipjack_aft_port_solars"
+
+/obj/effect/shuttle_landmark/skipjack/deck5
+	name = "South of Bridge"
+	landmark_tag = "skipjack_mining_station"
+
+//NT Rescue Shuttle
+
+/datum/shuttle/autodock/multi/antag/rescue
+	name = "Rescue"
+	warmup_time = 0
+	destination_tags = list(
+		"rescue_northwest_of_the_station",
+		"rescue_north_of_the_station",
+		"rescue_northeast_of_the_station",
+		"rescue_southwest_of_the_station",
+		"rescue_south_of_the_station",
+		"rescue_southeast_of_the_station",
+		"rescue_telecomms_satellite",
+		"rescue_engineering_station",
+		"rescue_arrivals_dock"
+		)
+	shuttle_area = /area/rescue_base/start
+	dock_target = "rescue_shuttle"
+	current_location = "nav_ert_start"
+	landmark_transition = "nav_ert_transition"
+	home_waypoint = "nav_ert_start"
+	announcer = "SEV Torch Sensor Array"
+	arrival_message = "Attention, vessel detected entering vessel proximity."
+	departure_message = "Attention, vessel detected leaving vessel proximity."
+
+/obj/effect/shuttle_landmark/ert/start
+	name = "Response Team Base"
+	landmark_tag = "nav_ert_start"
+	docking_controller = "rescue_base"
+
+/obj/effect/shuttle_landmark/ert/internim
+	name = "In transit"
+	landmark_tag = "nav_ert_transition"
+
+/obj/effect/shuttle_landmark/ert/dock
+	name = "Docking Port"
+	landmark_tag = "nav_ert_dock"
+	docking_controller = "rescue_shuttle_dock_airlock"
+
+/obj/effect/shuttle_landmark/ert/rescue_northwest_of_the_station
+	name =  "Southwest of Fourth deck"
+	landmark_tag = "rescue_northwest_of_the_station"
+
+/obj/effect/shuttle_landmark/ert/rescue_north_of_the_station
+	name = "Northwest of Third deck"
+	landmark_tag = "rescue_north_of_the_station"
+
+/obj/effect/shuttle_landmark/ert/rescue_northeast_of_the_station
+	name = "Northwest of Second deck"
+	landmark_tag = "rescue_northeast_of_the_station"
+
+/obj/effect/shuttle_landmark/ert/rescue_southwest_of_the_station
+	name = "Southwest of First Deck"
+	landmark_tag = "rescue_southwest_of_the_station"
+
+/obj/effect/shuttle_landmark/ert/rescue_south_of_the_station
+	name = "West of Bridge"
+	landmark_tag = "rescue_south_of_the_station"
+
+/obj/effect/shuttle_landmark/ert/rescue_southeast_of_the_station
+	name = "West of Bridge"
+	landmark_tag = "rescue_southeast_of_the_station"
+
+/obj/effect/shuttle_landmark/ert/rescue_telecomms_satellite
+	name = "West of Bridge"
+	landmark_tag = "rescue_telecomms_satellite"
+
+/obj/effect/shuttle_landmark/ert/rescue_engineering_station
+	name = "West of Bridge"
+	landmark_tag = "rescue_engineering_station"
+
+/obj/effect/shuttle_landmark/ert/rescue_arrivals_dock
+	name = "West of Bridge"
+	landmark_tag = "rescue_arrivals_dock"
+
+//Deathsquad Assault Pod
+
+/datum/shuttle/autodock/ferry/specops/ert
+	name = "Special Operations"
+	warmup_time = 10
+	shuttle_area = /area/shuttle/specops/centcom
+	dock_target = "specops_shuttle_fore"
+	waypoint_station = "nav_specops_start"
+	waypoint_offsite = "nav_specops_out"
+
+/obj/effect/shuttle_landmark/specops/start
+	name = "Centcom"
+	landmark_tag = "nav_specops_start"
+	docking_controller = "specops_shuttle_port"
+
+/obj/effect/shuttle_landmark/specops/out
+	name = "Docking Bay"
+	landmark_tag = "nav_specops_out"
+	docking_controller = "specops_dock_airlock"
+
+//merchant shuttle
+
+/datum/shuttle/autodock/ferry/merchant
+	name = "Merchant"
+	warmup_time = 10
+	shuttle_area = /area/shuttle/merchant/home
+	waypoint_station = "nav_merchant_start"
+	waypoint_offsite = "nav_merchant_out"
+	dock_target = "merchant_ship_dock"
+
+/obj/effect/shuttle_landmark/merchant/start
+	name = "Merchant Base"
+	landmark_tag = "nav_merchant_start"
+	docking_controller = "merchant_station_dock"
+
+/obj/effect/shuttle_landmark/merchant/out
+	name = "Docking Bay"
+	landmark_tag = "nav_merchant_out"
+	docking_controller = "merchant_shuttle_station_dock"
+
+// alien shuttle
+///datum/shuttle/autodock/ferry/alien
+//	name = "Alien"
+//	shuttle_area = /area/shuttle/alien/base
+//	waypoint_station = /area/shuttle/alien/base
+//	waypoint_offsite = /area/shuttle/alien/mine
