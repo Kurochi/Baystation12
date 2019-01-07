@@ -331,7 +331,7 @@
 /obj/effect/shuttle_landmark/admin/start
 	name = "Centcom"
 	landmark_tag = "nav_admin_start"
-	docking_controller = "admin_shuttle_bay_door"
+	docking_controller = "admin_shuttle_bay"
 	base_area = /area/centcom
 	base_turf = /turf/simulated/floor/plating
 
@@ -436,7 +436,7 @@
 /obj/effect/shuttle_landmark/skipjack/start
 	name = "Raider Outpost"
 	landmark_tag = "nav_skipjack_start"
-	docking_controller = "skipjack_base"
+	docking_controller = "vox_west_control"
 
 /obj/effect/shuttle_landmark/skipjack/internim
 	name = "In transit"
