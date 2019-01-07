@@ -418,6 +418,7 @@
 	name = "Skipjack"
 	warmup_time = 0
 	destination_tags = list(
+		"nav_skipjack_start",
 		"skipjack_fore_starboard_solars",
 		"skipjack_fore_port_solars",
 		"skipjack_aft_starboard_solars",
@@ -436,7 +437,7 @@
 /obj/effect/shuttle_landmark/skipjack/start
 	name = "Raider Outpost"
 	landmark_tag = "nav_skipjack_start"
-	docking_controller = "vox_west_control"
+	docking_controller = "vox_base_controller"
 
 /obj/effect/shuttle_landmark/skipjack/internim
 	name = "In transit"
@@ -473,6 +474,7 @@
 	name = "Rescue"
 	warmup_time = 0
 	destination_tags = list(
+		"nav_ert_start",
 		"rescue_northwest_of_the_station",
 		"rescue_north_of_the_station",
 		"rescue_northeast_of_the_station",
