@@ -194,6 +194,7 @@
 	anchored = 0
 	buckle_pixel_shift = "x=0;y=6"
 	var/item_form_type = /obj/item/roller	//The folded-up object path.
+	w_class = ITEM_SIZE_NORMAL
 
 /obj/structure/bed/roller/on_update_icon()
 	if(density)
