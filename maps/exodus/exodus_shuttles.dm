@@ -437,7 +437,6 @@
 /obj/effect/shuttle_landmark/skipjack/start
 	name = "Raider Outpost"
 	landmark_tag = "nav_skipjack_start"
-	docking_controller = "vox_base_controller"
 
 /obj/effect/shuttle_landmark/skipjack/internim
 	name = "In transit"
