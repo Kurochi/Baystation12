@@ -4,6 +4,18 @@
 /datum/gear/suit/overalls
 	allowed_branches = CIVILIAN_BRANCHES
 
+/datum/gear/suit/leather
+	allowed_roles = NON_MILITARY_ROLES
+
+/datum/gear/suit/hoodie
+	allowed_roles = RESTRICTED_ROLES
+
+/datum/gear/suit/hoodie_sel
+	allowed_roles = RESTRICTED_ROLES
+
+/datum/gear/suit/labcoat
+	allowed_roles = NON_MILITARY_ROLES
+
 /datum/gear/suit/medcoat
 	allowed_roles = MEDICAL_ROLES
 

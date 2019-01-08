@@ -17,51 +17,19 @@
 	berets["border security beret"] = /obj/item/clothing/head/beret/solgov/borderguard
 	gear_tweaks += new/datum/gear_tweak/path(berets)
 
-/datum/gear/head/veteranhat
-	display_name = "veteran hat"
-	path = /obj/item/clothing/head/soft/solgov/veteranhat
-	allowed_branches = CIVILIAN_BRANCHES
-
-/datum/gear/head/solhat
-	display_name = "sol central government hat"
-	path = /obj/item/clothing/head/soft/solgov
-	allowed_branches = SOLGOV_BRANCHES
-
-/datum/gear/head/fleethat
-	display_name = "fleet cap"
-	path = /obj/item/clothing/head/solgov/utility/fleet
-	cost = 0
-	allowed_branches = list(/datum/mil_branch/fleet)
-
-/datum/gear/head/echat
-	display_name = "EC cap"
-	path = /obj/item/clothing/head/soft/solgov/expedition
-	cost = 0
-	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
-
-/datum/gear/head/surgical
-	allowed_roles = STERILE_ROLES
-
 /datum/gear/head/whitentberet
-	allowed_roles = list(/datum/job/guard)
-
-/datum/gear/head/beret
-	allowed_branches = CIVILIAN_BRANCHES
-
-/datum/gear/mask/bandana
-	allowed_branches = CIVILIAN_BRANCHES
-
-/datum/gear/head/bandana
-	allowed_branches = CIVILIAN_BRANCHES
-
-/datum/gear/head/bow
-	allowed_branches = CIVILIAN_BRANCHES
+	display_name = "beret, NanoTrasen security"
+	path = /obj/item/clothing/head/beret/guard
+	allowed_roles = list("Security Guard")
 
 /datum/gear/head/cap
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_roles = NON_MILITARY_ROLES
 
 /datum/gear/head/hairflower
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_roles = FORMAL_ROLES
+
+/datum/gear/head/bow
+	allowed_roles = FORMAL_ROLES
 
 /datum/gear/head/hardhat
 	allowed_roles = TECHNICAL_ROLES
@@ -70,6 +38,7 @@
 	allowed_roles = FORMAL_ROLES
 
 /datum/gear/head/informalhat
+	path = /obj/item/clothing/head/cowboy_hat
 	allowed_roles = SEMIFORMAL_ROLES
 
 /datum/gear/head/welding
@@ -84,12 +53,3 @@
 	path = /obj/item/clothing/head/beret/solgov/fleet/branch
 	allowed_branches = list(/datum/mil_branch/fleet)
 
-/datum/gear/head/fleetberet/New()
-	..()
-	var/berets = list()
-	berets["first fleet beret"] = /obj/item/clothing/head/beret/solgov/fleet/branch
-	berets["second fleet beret"] = /obj/item/clothing/head/beret/solgov/fleet/branch/second
-	berets["third fleet beret"] = /obj/item/clothing/head/beret/solgov/fleet/branch/third
-	berets["fourth fleet beret"] = /obj/item/clothing/head/beret/solgov/fleet/branch/fourth
-	berets["fifth fleet beret"] = /obj/item/clothing/head/beret/solgov/fleet/branch/fifth
-	gear_tweaks += new/datum/gear_tweak/path(berets)

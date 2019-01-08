@@ -2,6 +2,7 @@
 // Turf-only flags.
 #define TURF_FLAG_NOJAUNT 1 // This is used in literally one place, turf.dm, to block ethereal jaunt.
 #define TURF_FLAG_NORUINS 2
+#define NOJAUNT 1 // This is used in literally one place, turf.dm, to block ethereal jaunt.
 
 #define TRANSITIONEDGE 7 // Distance from edge to move to another z-level.
 #define RUIN_MAP_EDGE_PAD 15
@@ -78,6 +79,8 @@
 #define AREA_FLAG_EXTERNAL          2 // External as in exposed to space, not outside in a nice, green, forest
 #define AREA_FLAG_ION_SHIELDED      4 // shielded from ionospheric anomalies as an FBP / IPC
 #define AREA_FLAG_IS_NOT_PERSISTENT 8 // SSpersistence will not track values from this area.
+#define AREA_RAD_SHIELDED 1 // shielded from radiation, clearly
+#define AREA_EXTERNAL     2 // External as in exposed to space, not outside in a nice, green, forest
 
 //Map template flags
 #define TEMPLATE_FLAG_ALLOW_DUPLICATES 1 // Lets multiple copies of the template to be spawned
@@ -111,6 +114,7 @@
 #define BOMBCAP_HEAVY_RADIUS (GLOB.max_explosion_range/2)
 #define BOMBCAP_LIGHT_RADIUS GLOB.max_explosion_range
 #define BOMBCAP_FLASH_RADIUS (GLOB.max_explosion_range*1.5)
+
 									// NTNet module-configuration values. Do not change these. If you need to add another use larger number (5..6..7 etc)
 #define NTNET_SOFTWAREDOWNLOAD 1 	// Downloads of software from NTNet
 #define NTNET_PEERTOPEER 2			// P2P transfers of files between devices

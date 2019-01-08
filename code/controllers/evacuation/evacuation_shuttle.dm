@@ -34,6 +34,7 @@
 	for (var/datum/shuttle/autodock/ferry/escape_pod/pod in escape_pods)
 		if (!pod.arming_controller || pod.arming_controller.armed)
 			pod.move_time = evac_transit_delay
+			pod.long_jump_time = get_long_jump_time()
 			pod.launch(src)
 
 	if(autopilot && shuttle.moving_status == SHUTTLE_IDLE)
