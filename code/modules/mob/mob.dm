@@ -201,10 +201,12 @@
 			. += max(0, M.mob_size) / MOB_MEDIUM
 		else
 			. += 1
+	//. *= (0.8 / size_strength_mod())
 	. *= (0.8 ** size_strength_mod())
 
 //Determines mob size/strength effects for slowdown purposes. Standard is 0; can be pos/neg.
 /mob/proc/size_strength_mod()
+	//return 1 + (mob_size / MOB_MAX_SIZE / 2)
 	return log(2, mob_size / MOB_MEDIUM)
 
 /mob/proc/Life()

@@ -113,18 +113,22 @@
 #define COMPANY_ALIGNMENTS		list(COMPANY_LOYAL,COMPANY_SUPPORTATIVE,COMPANY_NEUTRAL,COMPANY_SKEPTICAL,COMPANY_OPPOSED)
 
 // Defines mob sizes, used by lockers and to determine what is considered a small sized mob, etc.
+#define MOB_MAX_SIZE	40
 #define MOB_LARGE  		40
 #define MOB_MEDIUM 		20
 #define MOB_SMALL 		10
 #define MOB_TINY 		5
 #define MOB_MINISCULE	1
+#define MOB_MIN_SIZE	1
 
 // Defines how strong the species is compared to humans. Think like strength in D&D
+#define STR_MAX       2
 #define STR_VHIGH       2
 #define STR_HIGH        1
 #define STR_MEDIUM      0
 #define STR_LOW        -1
 #define STR_VLOW       -2
+#define STR_MIN       -2
 
 // Gluttony levels.
 #define GLUT_TINY 1       // Eat anything tiny and smaller

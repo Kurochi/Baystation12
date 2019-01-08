@@ -40,13 +40,9 @@
 				item_slowdown += I.slowdown_per_slot[slot]
 				item_slowdown += I.slowdown_accessory
 
-				if(item_slowdown >= 0)
-					var/size_mod = size_strength_mod()
-					/*if(size_mod + 1 > 0)
-						item_slowdown = item_slowdown / (species.strength + size_mod + 1)
-					else
-						item_slowdown = item_slowdown - species.strength - size_mod*/
-					item_slowdown = item_slowdown / (species.strength + size_mod + 1)
+				//var/size_mod = size_strength_mod()
+				item_slowdown = item_slowdown// / size_strength_mod()
+
 				total_item_slowdown += max(item_slowdown, 0)
 		tally += round(total_item_slowdown)
 
@@ -74,6 +70,8 @@
 
 /mob/living/carbon/human/size_strength_mod()
 	. = ..()
+	/*/var/strengthMultiplier = 1 + (species.strength / STR_MAX / 2)
+	. *= strengthMultiplier*/
 	. += species.strength
 
 /mob/living/carbon/human/Allow_Spacemove(var/check_drift = 0)
