@@ -481,3 +481,15 @@
 
 	images -= powernet_markers
 	QDEL_NULL_LIST(powernet_markers)
+
+/client/proc/update_lights() // -- Urist
+	set category = "Debug"
+	set name = "Update Lights"
+	set desc = "Updates all lights."
+
+	if(!check_rights(R_DEBUG)) return
+
+	for(var/atom/O in world)
+		set background = 1
+		if (O.light)
+			O.light.force_update()

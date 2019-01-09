@@ -412,3 +412,6 @@ RADIATION_LOWER_LIMIT 0.15
 
 ## Uncomment this to prevent players from printing copy/pasted circuits
 #DISABLE_CIRCUIT_PRINTING
+
+## Multiplies the lighting falloff by this value. Default, 1. Higher is darker, lower is brighter.
+LIGHTING_FALLOFF_MULTIPLIER 1

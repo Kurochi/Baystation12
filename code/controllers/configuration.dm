@@ -221,6 +221,7 @@ var/list/gamemode_cache = list()
 	var/max_gear_cost = 10 // Used in chargen for accessory loadout limit. 0 disables loadout, negative allows infinite points.
 
 	var/allow_ic_printing = TRUE //Whether players should be allowed to print IC circuits from scripts.
+	var/lighting_falloff_multiplier = 1
 
 /datum/configuration/New()
 	var/list/L = typesof(/datum/game_mode) - /datum/game_mode
@@ -741,6 +742,8 @@ var/list/gamemode_cache = list()
 					player_limit = text2num(value)
 				if("hub")
 					world.update_hub_visibility()
+				if ("lighting_falloff_multiplier")
+					config.lighting_falloff_multiplier = text2num(value)
 
 				else
 					log_misc("Unknown setting in configuration: '[name]'")
