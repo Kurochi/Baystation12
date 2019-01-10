@@ -1,27 +1,16 @@
 #define TAG_CULTURE   "culture"
-#define TAG_EDUCATION "education"
 #define TAG_HOMEWORLD "home_system"
 #define TAG_FACTION   "faction"
 #define TAG_RELIGION  "religion"
 
 #define ALL_CULTURAL_TAGS list( \
 	TAG_CULTURE =   "Culture", \
-	TAG_EDUCATION = "Education", \
 	TAG_HOMEWORLD = "Residence", \
 	TAG_FACTION =   "Faction", \
 	TAG_RELIGION =  "Beliefs" \
 	)
 
 // Cultural IDs.
-#define EDUCATION_NONE         "None"
-#define EDUCATION_DROPOUT      "Dropout"
-#define EDUCATION_HIGH_SCHOOL  "High School"
-#define EDUCATION_TRADE_SCHOOL "Trade School"
-#define EDUCATION_UNDERGRAD    "Bachelor's Degree"
-#define EDUCATION_MASTERS      "Master's Degree"
-#define EDUCATION_DOCTORATE    "Doctorate"
-#define EDUCATION_MEDSCHOOL    "Medical Degree"
-
 #define FACTION_SOL_CENTRAL    "Sol Central Government"
 #define FACTION_INDIE_CONFED  "Gilgamesh Colonial Confederation"
 #define FACTION_NANOTRASEN     "NanoTrasen"
@@ -176,44 +165,13 @@
 #define CULTURE_XENOPHAGE_Q    "Xenophage Queen"
 #define FACTION_XENOPHAGE      "Xenophage Hive"
 
-// Other culture values.
-#define EDUCATION_TIER_NONE      0
-#define EDUCATION_TIER_DROPOUT   1
-#define EDUCATION_TIER_BASIC     2
-#define EDUCATION_TIER_TRADE     3
-#define EDUCATION_TIER_BACHELOR  4
-#define EDUCATION_TIER_MASTERS   5
-#define EDUCATION_TIER_DOCTORATE 6
-#define EDUCATION_TIER_MEDSCHOOL 7
-
 // Nabber grades.
-#define EDUCATION_NABBER_CMINUS "Grade C-"
-#define EDUCATION_NABBER_C      "Grade C"
-#define EDUCATION_NABBER_CPLUS  "Grade C+"
-#define EDUCATION_NABBER_BMINUS "Grade B-"
-#define EDUCATION_NABBER_B      "Grade B"
-#define EDUCATION_NABBER_BPLUS  "Grade B+"
-#define EDUCATION_NABBER_AMINUS "Grade A-"
-#define EDUCATION_NABBER_A      "Grade A"
-#define EDUCATION_NABBER_APLUS  "Grade A+"
-
-// Skrellian education.
-#define EDUCATION_SKRELL_FAILURE      "Qlor-Mog"
-#define EDUCATION_SKRELL_BASIC        "Qrri-Mog"
-#define EDUCATION_SKRELL_FULL         "Qerr-Mog"
-#define EDUCATION_SKRELL_FULL_SCIENCE "Qerr-Mog, Science Focus"
-#define EDUCATION_SKRELL_FULL_DOCTOR  "Qerr-Mog, Medicine Focus"
-
-// Skrellian education.
-#define EDUCATION_TAJARA_FAILURE      "Tajara Skewl"
-#define EDUCATION_TAJARA_BASIC        "Tajara Skewl"
-#define EDUCATION_TAJARA_FULL         "Tajara Skewl"
-#define EDUCATION_TAJARA_FULL_SCIENCE "Tajara Skewl, Science Focus"
-#define EDUCATION_TAJARA_FULL_DOCTOR  "Tajara Skewl, Medicine Focus"
-
-// Resomi education.
-#define EDUCATION_RESOMI_FAILURE      "Smol Birb Skewl"
-#define EDUCATION_RESOMI_BASIC        "Smol Birb Skewl"
-#define EDUCATION_RESOMI_FULL         "Smol Birb Skewl"
-#define EDUCATION_RESOMI_FULL_SCIENCE "Smol Birb Skewl, Science Focus"
-#define EDUCATION_RESOMI_FULL_DOCTOR  "Smol Birb Skewl, Medicine Focus"
+#define CULTURE_NABBER_CMINUS "Grade C-"
+#define CULTURE_NABBER_C      "Grade C"
+#define CULTURE_NABBER_CPLUS  "Grade C+"
+#define CULTURE_NABBER_BMINUS "Grade B-"
+#define CULTURE_NABBER_B      "Grade B"
+#define CULTURE_NABBER_BPLUS  "Grade B+"
+#define CULTURE_NABBER_AMINUS "Grade A-"
+#define CULTURE_NABBER_A      "Grade A"
+#define CULTURE_NABBER_APLUS  "Grade A+"
